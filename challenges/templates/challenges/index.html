@@ -10,11 +10,12 @@
 {% endblock %}
 
 {% block replacable_body %}
-<ol>
+<ul>
     {% for i in month_list %}
     <!--            <li> <h1> <a href = /challenges/{{ i }} >{{ i|title }}</a> </h1></li>-->
     <!--        hardcoding the relative path is not a good idea-->
-    <li><h1><a href="{% url 'month_str_url' i %}">{{ i|title }}</a></h1></li>
+    <li><a href="{% url 'month_str_url' i %}">{{ i|title }}</a></li>
     {% endfor %}
-</ol>
+</ul>
 {% endblock %}
+
