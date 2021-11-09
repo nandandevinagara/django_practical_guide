@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+{% endblock %}
+
+{% block title %}
+    <title>All Challenges</title>
+{% endblock %}
+
+{% block replacable_body %}
+<ol>
+    {% for i in month_list %}
+    <!--            <li> <h1> <a href = /challenges/{{ i }} >{{ i|title }}</a> </h1></li>-->
+    <!--        hardcoding the relative path is not a good idea-->
+    <li><h1><a href="{% url 'month_str_url' i %}">{{ i|title }}</a></h1></li>
+    {% endfor %}
+</ol>
+{% endblock %}

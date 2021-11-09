@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Monthly Challenge (title from extended html file)
+{% endblock %}
+
+{% block replacable_body %}
+    {% include "challenges/includes/header.html" %}
+    <h1>This is {{ month|title }}  month challenge (rendering from html file)</h1>
+    {% if month_text is not None %}
+        <h1>{{ month }} Task: {{ month_text }}</h1>
+    {% else %}
+        <h1>There is no challenge yet to this month</h1>
+    {% endif %}
+{% endblock %}

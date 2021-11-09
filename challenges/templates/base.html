@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        <h1>Title (which will be replaced later)</h1>
+        {% endblock %}
+    </title>
+<!--    a common css file for the whole project-->
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+<!--    a block which can be used/discarded by individual child templates-->
+            {% block css_files %} {% endblock %}
+</head>
+
+<body>
+{% block replacable_body %}
+<h1>Body will be replaced later by child html's</h1>
+{% endblock %}
+</body>
+
+</html>

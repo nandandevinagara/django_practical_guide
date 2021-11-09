@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+html{
+/*font-family: 'Caveat', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Courgette', cursive;*/
+font-family: 'Cardo', serif;
+}
+
+body{
+margin:2
+}
+
